@@ -1,0 +1,145 @@
+/*
+ * Global stylesheet for the eBusiness eXpert website.
+ *
+ * The colour palette and typography are inspired by the original brand
+ * guidelines (blue #003366, white and grey tones). This file
+ * centralises all common styles to ensure consistency across
+ * pages. You can extend this stylesheet as needed when adding
+ * additional pages or components in the future.
+ */
+
+body {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  color: #333333;
+}
+
+/* Header navigation */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero banner */
+.hero {
+  background-color: #0066cc;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background-color: #00234d;
+}
+
+/* Sections */
+.section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: #003366;
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+.service-list, .solution-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 20px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.card p {
+  line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .service-list, .solution-list {
+    flex-direction: column;
+  }
+}
